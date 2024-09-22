@@ -3,7 +3,7 @@ const {ApiError} = require('../utils/ApiError.js');
 const {User} = require('../models/video_model/user.models.js');
 const {uploadOnCloudinary} = require('../utils/cloudinary.js');
 const {ApiResponse} = require('../utils/ApiResponse.js')
-const jwt = require('jsonwebtoken')
+const jwt = require('jsonwebtoken');
 
 
 const generateAccessAndRefreshTokens = async(userId) => {
