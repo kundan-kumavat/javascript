@@ -1,6 +1,8 @@
 let String = 'hitesh';
 let var1 = null
+
 console.log(typeof String)
+// null is an object
 console.log(typeof null)
 
 let key = Symbol('123');

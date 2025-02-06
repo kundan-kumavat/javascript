@@ -18,7 +18,9 @@
 // myArr.pop()
 
 // myArr.unshift(9)
+// console.log(myArr)
 // myArr.shift()
+// console.log(myArr)
 
 // console.log(myArr.includes(9))
 // console.log(myArr.indexOf(9))
@@ -66,6 +68,7 @@ console.log(true == '');
 console.log('1' == 1);
 
 let a = 10;
+// console.log(typeof a)
 // this will create a object variable
 let b = new Number(10);
 let c = 10;
