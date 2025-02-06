@@ -119,7 +119,7 @@ const loginUser = asyncHandler(async (req, res) => {
 
     // Here is an alternative of the above code based on login discussed in video:
     // if(!(username || email)){
-    //     throw new ApiError(400, "username or rmail is required")
+    //     throw new ApiError(400, "username or email is required")
     // }
     
     // find the user
@@ -462,7 +462,7 @@ const getWatchHistory = asyncHandler(async (req, res) => {
                     {
                        $addFields: {
                          owner: {
-                            $first: "owner"
+                            $first: "$owner"
                          }
                        } 
                     }

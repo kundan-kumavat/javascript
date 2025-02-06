@@ -8,6 +8,21 @@ const {asyncHandler} = require('../utils/asyncHandler.js')
 
 const getChannelStats = asyncHandler(async (req, res) => {
     // TODO: Get the channel stats like total video views, total subscribers, total videos, total likes etc.
+
+    const { username } = req.params
+
+    if(!username){
+        throw new ApiError(400, "Username is required")
+    }
+
+    const channelStats = await Video.aggregate([
+        {
+            $match: {
+                owner: req.user?._id
+            }
+        }
+    ])
+    
 })
 
 const getChannelVideos = asyncHandler(async (req, res) => {
@@ -17,4 +32,4 @@ const getChannelVideos = asyncHandler(async (req, res) => {
 module.exports = {
     getChannelStats, 
     getChannelVideos
-    }
+}

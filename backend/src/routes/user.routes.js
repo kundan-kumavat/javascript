@@ -1,6 +1,6 @@
 const {Router} = require('express');
 const { registerUser, loginUser, logoutUser, refreshAccessToken } = require('../controllers/user.controller.js');
-const {upload} = require('../middlewares/multer.middleware.js');
+const { upload } = require('../middlewares/multer.middleware.js');
 const { verifyJWT } = require('../middlewares/auth.middleware.js');
 
 const router = Router();

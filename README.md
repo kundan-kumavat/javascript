@@ -143,9 +143,9 @@ console.log(concatArray);
 
 ```javascript
 const array = [1, 2, 3, 4, 5, 6];
-const spliceArray = array.splice(0, 2);
+const sliceArray = array.slice(0, 2);
 
-console.log(spliceArray);
+console.log(sliceArray);
 // Output: [1, 2]
 ```
 
