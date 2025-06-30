@@ -69,4 +69,4 @@ function FunctionUser(email, password){
 }
 
 const userOne = new FunctionUser('kundan@example.com', '123')
-console.log(newUser.email)
+console.log(newUser.email('kundan04@gamil.com'))
